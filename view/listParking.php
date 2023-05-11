@@ -7,7 +7,6 @@
 <body>
 <h3>Parking List</h3>
 <table border="1">
-    <!--    si el usuario es admin ve la tabla completa-->
         <tr>
             <th>ID</th>
             <th>Name</th>

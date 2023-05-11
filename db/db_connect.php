@@ -1,6 +1,6 @@
 <?php
 
-//Creamos una funcion para conectarnos a la BBDD con los parametros y devolvemos la conexion
+//We create a function to connect to the database with the parameters and return the connection
 function getConnection() {
 
     $dbname = "pillaBikeWeb";
@@ -9,7 +9,6 @@ function getConnection() {
     $server = 'localhost';
     $dbh ="";
 
-// Con un array de opciones
     try {
         $dsn = "mysql:host=$server;dbname=$dbname;charset=UTF8";
         $dbh = new PDO($dsn, $user, $password);

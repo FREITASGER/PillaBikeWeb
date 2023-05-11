@@ -1,7 +1,6 @@
 <?php
-require './db/db_connect.php'; //conexión a BBDD
+require './db/db_connect.php';
 
-//Recoje la conexión lanzar un select a la BBDD para devolver un array de libros
 function getBikes()
 {
     $db = getConnection();

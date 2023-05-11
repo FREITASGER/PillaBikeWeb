@@ -3,12 +3,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Bike List</title>
-    <link rel="stylesheet" type="text/css" href="pillaBikePhp/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 <h3>Bike List</h3>
-<table border="1">
-    <!--    si el usuario es admin ve la tabla completa-->
+<table>
         <tr>
             <th>ID</th>
             <th>Name</th>
