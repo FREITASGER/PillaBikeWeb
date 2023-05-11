@@ -5,7 +5,7 @@ function allBikes()
     require 'model/bike_model.php';
     //Asks the model for all bikes
     $bikes = getBikes(); //function created within bike_model
-    include('view/listBike.php');
+    include('view/bikesList.php');
 }
 
 function newBike()
@@ -23,7 +23,7 @@ function newBike()
         //Incluimos el modelo correspondiente
         require 'model/bike_model.php';
         $bike = addBike($buy_date, $description, $electric, $price, $parking_id);
-        header("Location: ../index_list_bike.php");
+        header("Location: ../index_bikes_list.php");
     }
 }
 
@@ -32,5 +32,5 @@ function deleteBike() {
         $id = $_GET['id'];
     require 'model/bike_model.php';
     $parking = delete($id);
-    header("Location: ../index_list_bike.php");
+    header("Location: ../index_bikes_list.php");
 }

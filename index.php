@@ -8,8 +8,8 @@
 <body>
 <h1>Bienvenido a Pilla Bike</h1>
 <div class="button-container">
-    <a href="index_list_parking.php" class="button">Parking</a>
-    <a href="index_list_bike.php" class="button">Bike</a>
+    <a href="index_parkings_list.php" class="button">Parking</a>
+    <a href="index_bikes_list.php" class="button">Bike</a>
 </div>
 </body>
 </html>

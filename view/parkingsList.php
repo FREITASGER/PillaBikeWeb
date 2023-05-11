@@ -30,7 +30,7 @@
         </tr>
 
     <p> <a href="./index_new_parking.php">New Parking</a>
-        <a href="../index.php">Return</a>
+        <a href="./index.php">Return</a>
     </p>
 </table>
 </body>

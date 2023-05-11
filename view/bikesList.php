@@ -48,7 +48,7 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
         </tr>
 
     <p> <a href="index_new_bike.php">New Bike</a>
-        <a href="../index.php">Return</a>
+        <a href="./index.php">Return</a>
     </p>
 
 </table>

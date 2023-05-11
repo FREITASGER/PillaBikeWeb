@@ -4,7 +4,7 @@ function allParkings()
 {
     require 'model/parking_model.php';
     $parkings = getParkings();
-    include('view/listParking.php');
+    include('view/parkingsList.php');
 }
 
 function newParking()
@@ -22,7 +22,7 @@ function newParking()
         //Incluimos el modelo correspondiente
         require 'model/parking_model.php';
         $parking = addParking($name, $city, $open, $close, $is_full);
-        header("Location: ../index_list_parking.php");
+        header("Location: ../index_parkings_list.php");
     }
 }
 
@@ -31,5 +31,5 @@ function deleteParking() {
         $id = $_GET['id'];
     require 'model/parking_model.php';
     $parking = delete($id);
-    header("Location: ./index_list_parking.php");
+    header("Location: ./index_parkings_list.php");
 }
