@@ -1,5 +1,4 @@
 <?php
-
 //La carpeta donde buscaremos los controladores
 define('CONTROLLERS_FOLDER', 'controller/');
 
