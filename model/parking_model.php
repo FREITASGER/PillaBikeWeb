@@ -21,4 +21,12 @@ function addParking($name, $city, $open, $close, $isFull)
     $stmt->execute();
 }
 
+function delete($id)
+{
+    $db = getConnection();
+    $result = $db->prepare('DELETE FROM parking WHERE id=:id');
+    $result->bindParam(':id', $_GET['id']);
+    $result->execute();
+}
+
 

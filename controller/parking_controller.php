@@ -26,5 +26,12 @@ function newParking()
         $parking = addParking($name, $city, $open, $close, $isFull);
         header("Location: ../index_list_parking.php");
     }
+}
 
+function deleteParking() {
+    if(isset($_GET['id']) && is_numeric($_GET['id']))
+        $id = $_GET['id'];
+    require 'model/parking_model.php';
+    $parking = delete($id);
+    header("Location: ../index_list_parking.php");
 }
