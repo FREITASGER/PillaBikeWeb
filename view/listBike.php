@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Bike List</title>
+    <link rel="stylesheet" type="text/css" href="pillaBikePhp/css/style.css">
 </head>
 <body>
 <h3>Bike List</h3>
