@@ -7,3 +7,18 @@ function getParkings()
     $result->execute();
     return $bikes = $result->fetchAll(PDO::FETCH_ASSOC);
 }
+
+function addParking($name, $city, $open, $close, $isFull)
+{
+    $db = getConnection();
+    $query = ('INSERT INTO parking (name, city, open, close, isFull) VALUES (:name, :city, :open, :close, :isFull)');
+    $stmt = $db->prepare($query);
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':city', $city);
+    $stmt->bindParam(':open', $open);
+    $stmt->bindParam(':close', $close);
+    $stmt->bindParam(':isFull', $isFull);
+    $stmt->execute();
+}
+
+

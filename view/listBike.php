@@ -1,3 +1,6 @@
+<?php
+include ("view/header.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,10 +25,14 @@
                 <td> <?php echo $bike['buyDate'] ?></td>
                 <td> <?php echo $bike['description'] ?></td>
                 <td> <?php echo number_format($bike['price'], 2) ?> €</td>
-                <td> <?php echo $bike['electric'] ?></td>
+                <td> <?php echo $bike['electric'] ? 'Yes' : 'No' ?></td>
         <?php } ?>
         </tr>
 
 </table>
 </body>
 </html>
+
+<?php
+include ("view/footer.php");
+?>

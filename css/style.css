@@ -13,5 +13,70 @@ th {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+/*header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #064808;
+    padding: 1rem;
+}
+
+.header__title {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__list li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.header__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.header__link:hover {
+    color: #c62828;
+}
+
+/*footer*/
+.footer {
+    background-color: #064808;
+    color: #fff;
+    /*padding: 2rem 1rem;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.footer__copy {
+    font-size: 0.8rem;
+}
+
 
 
