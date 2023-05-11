@@ -24,12 +24,12 @@
                 <td> <?php echo $parking['city'] ?></td>
                 <td> <?php echo $parking['open'] ?></td>
                 <td> <?php echo $parking['close'] ?></td>
-                <td> <?php echo $parking['isFull'] ? 'Yes' : 'No' ?></td>
+                <td> <?php echo $parking['is_full'] ? 'Yes' : 'No' ?></td>
                 <td><a href="/index_delete_parking.php?id=<?php echo $parking['id'] ?>" onclick="return confirm('¿Estás seguro que quieres eliminar este producto?'); false">Delete</a></td>
                 <?php } ?>
         </tr>
 
-    <p> <a href="index_new_parking.php">New Parking</a>
+    <p> <a href="./index_new_parking.php">New Parking</a>
         <a href="../index.php">Return</a>
     </p>
 </table>

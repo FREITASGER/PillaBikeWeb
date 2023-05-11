@@ -21,10 +21,10 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBikeWeb', $user, $pwd);
     <input type="time" name="open" required><br>
     <label for="close">Close:</label>
     <input type="time" name="close" required><br>
-    <label for="isFull">Full:</label>
-    <input type="checkbox" name="isFull" value="1"><br>
+    <label for="is_full">Full:</label>
+    <input type="checkbox" name="is_full" value="1"><br>
 
-    <input type="submit" name="registro" value="Añadir">
+    <input type="submit" name="registro" value="Add">
 </form>
 </body>
 </html>

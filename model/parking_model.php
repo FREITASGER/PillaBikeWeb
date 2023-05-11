@@ -3,21 +3,21 @@ require './db/db_connect.php';
 function getParkings()
 {
     $db = getConnection();
-    $result = $db->query('SELECT id, name, city, open, close, isFull FROM parking');
+    $result = $db->query('SELECT id, name, city, open, close, is_full FROM parking');
     $result->execute();
     return $bikes = $result->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function addParking($name, $city, $open, $close, $isFull)
+function addParking($name, $city, $open, $close, $is_full)
 {
     $db = getConnection();
-    $query = ('INSERT INTO parking (name, city, open, close, isFull) VALUES (:name, :city, :open, :close, :isFull)');
+    $query = ('INSERT INTO parking (name, city, open, close, is_full) VALUES (:name, :city, :open, :close, :is_full)');
     $stmt = $db->prepare($query);
     $stmt->bindParam(':name', $name);
     $stmt->bindParam(':city', $city);
     $stmt->bindParam(':open', $open);
     $stmt->bindParam(':close', $close);
-    $stmt->bindParam(':isFull', $isFull);
+    $stmt->bindParam(':is_full', $is_full);
     $stmt->execute();
 }
 

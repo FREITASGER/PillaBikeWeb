@@ -17,13 +17,11 @@ function newParking()
         $city = $_POST["city"];
         $open = $_POST["open"];
         $close = $_POST["close"];
-        //$isFull = $_POST["isFull"];
-        $isFull = isset($_POST['isFull']) && $_POST['isFull'] == 'on' ? true : false;
-        //addParking($_POST['name'], $_POST['city'], $_POST['startTime'], $_POST['endTime'], $isFull);
+        $is_full = isset($_POST['is_full']) && $_POST['is_full'] == 'on' ? true : false;
 
         //Incluimos el modelo correspondiente
         require 'model/parking_model.php';
-        $parking = addParking($name, $city, $open, $close, $isFull);
+        $parking = addParking($name, $city, $open, $close, $is_full);
         header("Location: ../index_list_parking.php");
     }
 }
@@ -33,5 +31,5 @@ function deleteParking() {
         $id = $_GET['id'];
     require 'model/parking_model.php';
     $parking = delete($id);
-    header("Location: ../index_list_parking.php");
+    header("Location: ./index_list_parking.php");
 }

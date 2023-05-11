@@ -3,7 +3,7 @@
 //We create a function to connect to the database with the parameters and return the connection
 function getConnection() {
 
-    $dbname = "pillaBikeWeb";
+    $dbname = "pillabike";
     $user = "root";
     $password = "";
     $server = 'localhost';
