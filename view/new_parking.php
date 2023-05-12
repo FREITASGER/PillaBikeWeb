@@ -10,7 +10,7 @@
 <?php
 $user = 'root';
 $pwd = '';
-$db = new PDO('mysql:host=localhost;dbname=pillaBikeWeb', $user, $pwd);
+$db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
 ?>
 <form method="post">
     <label for="name">Name:</label>

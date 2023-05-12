@@ -25,7 +25,7 @@
                 <td> <?php echo $parking['open'] ?></td>
                 <td> <?php echo $parking['close'] ?></td>
                 <td> <?php echo $parking['is_full'] ? 'Yes' : 'No' ?></td>
-                <td><a href="/index_delete_parking.php?id=<?php echo $parking['id'] ?>" onclick="return confirm('¿Estás seguro que quieres eliminar este producto?'); false">Delete</a></td>
+                <td><a href="/index_delete_parking.php?id=<?php echo $parking['id'] ?>" onclick="return confirm('Are you sure you want to remove this product?'); false">Delete</a></td>
                 <?php } ?>
         </tr>
 

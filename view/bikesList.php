@@ -18,7 +18,7 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
 <table>
         <tr>
             <th>ID</th>
-            <th>Name</th>
+            <th>Buy Date</th>
             <th>Description</th>
             <th>Price</th>
             <th>Electric</th>
@@ -42,7 +42,7 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
                 <td> <?php echo $parking_name ?></td>
 
 
-                <td><a href="/index_delete_bike.php?id=<?php echo $bike['id'] ?>" onclick="return confirm('¿Estás seguro que quieres eliminar este producto?'); false">Delete</a></td>
+                <td><a href="/index_delete_bike.php?id=<?php echo $bike['id'] ?>" onclick="return confirm('¿Are you sure y?'); false">Delete</a></td>
                 <?php } ?>
 
         </tr>

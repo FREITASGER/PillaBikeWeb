@@ -16,14 +16,14 @@ function newBike()
         //obtenemos los datos
         $buy_date = $_POST["buy_date"];
         $description = $_POST["description"];
-        $electric = isset($_POST['electric']) && $_POST['electric'] == 'on' ? true : false;
+        $electric = isset($_POST['electric']) && $_POST['electric'] == 'on';
         $price = $_POST["price"];
         $parking_id = $_POST["parking_id"];
 
         //Incluimos el modelo correspondiente
         require 'model/bike_model.php';
         $bike = addBike($buy_date, $description, $electric, $price, $parking_id);
-        header("Location: ../index_bikes_list.php");
+        header("Location: index_bikes_list.php");
     }
 }
 

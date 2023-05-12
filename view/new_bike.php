@@ -30,7 +30,7 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
         $parkings = $query->fetchAll();
 
         foreach ($parkings as $parking):
-            echo '<option value"'.$parking["id"].'">'.$parking["id"].' - '.$parking["name"].'</option>';
+            echo '<option value"'.$parking["id"].'">'.$parking["name"].'</option>';
         endforeach;
         ?>
     </select>
