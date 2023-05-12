@@ -4,8 +4,8 @@
 function getConnection() {
 
     $dbname = "pillabike";
-    $user = "root";
-    $password = "";
+    $user = "pillabike";
+    $password = "pillabike";
     $server = 'localhost';
     $dbh ="";
 

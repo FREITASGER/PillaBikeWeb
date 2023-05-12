@@ -8,8 +8,8 @@
 
 <h3>New Bike</h3>
 <?php
-$user = 'root';
-$pwd = '';
+$user = 'pillabike';
+$pwd = 'pillabike';
 $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
 ?>
 <form method="post">
@@ -18,7 +18,7 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
     <label for="description">Description:</label>
     <input type="text" name="description" required><br>
     <label for="electric">Electric:</label>
-    <input type="checkbox" name="electric" value="1"><br>
+    <input type="checkbox" name="electric" value="on"><br>
     <label for="price">Price:</label>
     <input type="text" name="price" required><br>
     <label for="parking_id">Parking:</label>

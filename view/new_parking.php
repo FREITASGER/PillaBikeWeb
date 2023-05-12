@@ -8,8 +8,8 @@
 
 <h3>New Parking</h3>
 <?php
-$user = 'root';
-$pwd = '';
+$user = 'pillabike';
+$pwd = 'pillabike';
 $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
 ?>
 <form method="post">
@@ -22,7 +22,7 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
     <label for="close">Close:</label>
     <input type="time" name="close" required><br>
     <label for="is_full">Full:</label>
-    <input type="checkbox" name="is_full" value="1"><br>
+    <input type="checkbox" name="is_full" value="on"><br>
 
     <input type="submit" name="registro" value="Add">
 </form>

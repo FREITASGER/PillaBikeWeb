@@ -1,5 +1,5 @@
 <?php
-include ("view/header.php");
+include ("header.php");
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -11,8 +11,8 @@ include ("view/header.php");
 <body>
 <h3>Bike List</h3>
 <?php
-$user = 'root';
-$pwd = '';
+$user = 'pillabike';
+$pwd = 'pillabike';
 $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
 ?>
 <table>
