@@ -6,23 +6,22 @@ include ("view/header.php");
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Bike List</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
-<body>
+<body style="text-align: center">
 <h3>Bike List</h3>
 <?php
 $user = 'root';
 $pwd = '';
-$db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
+$db = new PDO('mysql:host=localhost:3307;dbname=pillabike', $user, $pwd);
 ?>
-<table>
+<table class="table">
         <tr>
-            <th>ID</th>
-            <th>Buy Date</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Electric</th>
-            <th>Parking</th>
+            <th scope="col">ID</th>
+            <th scope="col">Buy Date</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Electric</th>
+            <th scope="col">Parking</th>
         </tr>
         <?php
         foreach ($bikes as $bike) {
@@ -47,8 +46,8 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
 
         </tr>
 
-    <p> <a href="index_new_bike.php">New Bike</a>
-        <a href="./index.php">Return</a>
+    <p> <a class="btn btn-outline-success" href="./index_new_bike.php" role="button">New Bike</a>
+        <a class="btn btn-outline-success" href="./index.php" role="button">Return</a>
     </p>
 
 </table>

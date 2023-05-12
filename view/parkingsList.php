@@ -1,20 +1,23 @@
+<?php
+include ("view/header.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Parking List</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
-<body>
+<body style="text-align: center">
 <h3>Parking List</h3>
-<table >
+
+<table class="table">
         <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>City</th>
-            <th>Open</th>
-            <th>Close</th>
-            <th>Is Full?</th>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">City</th>
+            <th scope="col">Open</th>
+            <th scope="col">Close</th>
+            <th scope="col">Is Full?</th>
         </tr>
         <?php
         foreach ($parkings as $parking) {  ?>
@@ -29,8 +32,8 @@
                 <?php } ?>
         </tr>
 
-    <p> <a href="./index_new_parking.php">New Parking</a>
-        <a href="./index.php">Return</a>
+    <p> <a class="btn btn-outline-success" href="./index_new_parking.php" role="button">New Parking</a>
+        <a class="btn btn-outline-success" href="./index.php" role="button">Return</a>
     </p>
 </table>
 </body>

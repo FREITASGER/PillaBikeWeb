@@ -6,7 +6,7 @@ function getConnection() {
     $dbname = "pillabike";
     $user = "root";
     $password = "";
-    $server = 'localhost';
+    $server = 'localhost:3307';
     $dbh ="";
 
     try {
