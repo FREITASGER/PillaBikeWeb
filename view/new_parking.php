@@ -25,6 +25,11 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
     <input type="checkbox" name="is_full" value="on"><br>
 
     <input type="submit" name="registro" value="Add">
+
+    <p> <a href="index_parkings_list.php">Parking List</a>
+        <a href="./index.php">Main Menu</a>
+    </p>
+
 </form>
 </body>
 </html>

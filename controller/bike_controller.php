@@ -16,7 +16,12 @@ function newBike()
         //obtenemos los datos
         $buy_date = $_POST["buy_date"];
         $description = $_POST["description"];
-        $electric = isset($_POST['electric']) && $_POST['electric'] == 'on';
+        $electric = isset($_POST['electric']) && $_POST['electric'] == 'on' ? 1 : 0;
+//        if(isset($_POST['electric']) && $_POST['electric'] == 'on'){
+//            $electric = 1;
+//        } else {
+//            $electric = 0;
+//        }
         $price = $_POST["price"];
         $parking_id = $_POST["parking_id"];
 
@@ -32,5 +37,5 @@ function deleteBike() {
         $id = $_GET['id'];
     require 'model/bike_model.php';
     $parking = delete($id);
-    header("Location: ../index_bikes_list.php");
+    header("Location: pillaBikePhp/index_bikes_list.php");
 }

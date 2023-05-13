@@ -30,12 +30,16 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
         $parkings = $query->fetchAll();
 
         foreach ($parkings as $parking):
-            echo '<option value"'.$parking["id"].'">'.$parking["name"].'</option>';
+            echo '<option value"'.$parking["id"].'">'.$parking["id"].'</option>';
         endforeach;
         ?>
     </select>
 <br>
     <input type="submit" name="registro" value="Add">
+
+    <p> <a href="index_bikes_list.php">Bikes' List</a>
+        <a href="./index.php">Main Menu</a>
+    </p>
 </form>
 </body>
 </html>

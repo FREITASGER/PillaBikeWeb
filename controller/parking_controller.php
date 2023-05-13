@@ -17,7 +17,7 @@ function newParking()
         $city = $_POST["city"];
         $open = $_POST["open"];
         $close = $_POST["close"];
-        $is_full = isset($_POST['is_full']) && $_POST['is_full'] == 'on' ? true : false;
+        $is_full = isset($_POST['is_full']) && $_POST['is_full'] == 'on' ? 1 : 0;
 
         //Incluimos el modelo correspondiente
         require 'model/parking_model.php';
@@ -31,5 +31,5 @@ function deleteParking() {
         $id = $_GET['id'];
     require 'model/parking_model.php';
     $parking = delete($id);
-    header("Location: pillaBikePhp/index.php");
+    header("Location: pillaBikePhp/index_parkings_list.php");
 }
