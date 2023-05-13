@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pillaBikePhp.iml" filepath="$PROJECT_DIR$/.idea/pillaBikePhp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PillaBikeWeb.iml" filepath="$PROJECT_DIR$/.idea/PillaBikeWeb.iml" />
     </modules>
   </component>
 </project>
