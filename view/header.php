@@ -8,13 +8,7 @@
     <!--Para incrustar las fuente desde google-->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
     <!--FIN incrustar las fuente desde google-->
-
-    <nav class="navbar" style="background-color: #4cae50;"">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/img/camino.png" alt="Logo" width="1500" height="350" class="d-inline-block align-text-top">
-            </a>
-        </div>
-    </nav>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+<!--                <img src="/img/camino.png" alt="Logo" width="1500" height="350" class="d-inline-block align-text-top">-->
 
 </head>

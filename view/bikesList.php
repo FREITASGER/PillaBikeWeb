@@ -1,13 +1,6 @@
 <?php
 include ("header.php");
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Bike List</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-</head>
 <body>
 <h3>Bike List</h3>
 <?php
@@ -46,9 +39,8 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
                 <?php } ?>
 
         </tr>
-
-    <p> <a href="index_new_bike.php">New Bike</a>
-        <a href="./index.php">Return</a>
+    <p> <a href="./index_new_bike.php" class="btn btn-outline-success" type="button">New Bike</a>
+        <a href="./index.php" class="btn btn-outline-danger" type="button">Return</a>
     </p>
 
 </table>

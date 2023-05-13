@@ -1,6 +1,11 @@
-<?php
-include "view/header.php";
-?>
+<!DOCTYPE html>
+<html lang="es">
+<!-- Para usar la hoja de estilos de  Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- FIN hoja de estilos de  Bootstrap -->
+<!--Para incrustar las fuente desde google-->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
+<!--FIN incrustar las fuente desde google-->
 
 <body>
 <?php
@@ -78,7 +83,7 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
                             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
 
                                 <div class="d-flex align-items-center justify-content-center pb-4">
-                                    <img src="/img/newParking.png" height="850" width="850"
+                                    <img src="/img/newBike.png" height="850" width="850"
                                 </div>
                             </div>
                         </div>

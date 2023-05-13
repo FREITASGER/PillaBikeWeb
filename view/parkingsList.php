@@ -1,13 +1,6 @@
 <?php
 include "view/header.php";
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Parking List</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-</head>
 <body>
 <h3>Parking List</h3>
 <table >
@@ -32,8 +25,9 @@ include "view/header.php";
                 <?php } ?>
         </tr>
 
-    <p> <a href="./index_new_parking.php">New Parking</a>
-        <a href="./index.php">Return</a>
+
+    <p> <a href="./index_new_parking.php" class="btn btn-outline-success" type="button">New Parking</a>
+        <a href="./index.php" class="btn btn-outline-danger" type="button">Return</a>
     </p>
 </table>
 </body>
