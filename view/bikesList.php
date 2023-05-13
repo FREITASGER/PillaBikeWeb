@@ -47,6 +47,3 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
 </body>
 </html>
 
-<?php
-include ("view/footer.php");
-?>

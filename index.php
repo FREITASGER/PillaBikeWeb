@@ -21,8 +21,8 @@ include "view/headerNew.php";
                                             </div>
 
                                                 <div class="form-outline mb-4">
-                                                    <h1>Renting of bikes</h1>
-                                                    <p>PillaBike es tu web dedicada a el alquiler de bicis</p>
+                                                    <h1>Bike Renting</h1>
+                                                    <p>Rent your bike in PillaBike</p>
                                                 </div>
 
                                                 <div class="text-center pt-1 mb-5 pb-1">
