@@ -34,15 +34,15 @@ include "view/header.php";
                                     </div>
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form2Example11">Open:</label>
-                                        <input type="text" name="open" required class="form-control" />
+                                        <input type="time" name="open" required class="form-control" />
                                     </div>
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form2Example11">Close:</label>
-                                        <input type="text" name="close" required class="form-control" />
+                                        <input type="time" name="close" required class="form-control" />
                                     </div>
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form2Example11">Full:</label>
-                                        <input type="text" name="is_full" value="on" class="form-control" />
+                                        <input type="checkbox" name="is_full" value="on" />
                                     </div>
 
                                     <div class="text-center pt-1 mb-5 pb-1">

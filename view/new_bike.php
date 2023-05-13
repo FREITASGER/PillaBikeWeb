@@ -31,7 +31,7 @@ $db = new PDO('mysql:host=localhost;dbname=pillaBike', $user, $pwd);
                                     <form method="post">
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example11">Buy Date:</label>
-                                            <input type="text" name="buy_date" required class="form-control" />
+                                            <input type="date" name="buy_date" required class="form-control" />
                                         </div>
                                         <div class="form-outline mb-4">
                                             <label class="form-label" for="form2Example11">Description:</label>
